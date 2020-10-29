@@ -1,0 +1,8 @@
+# Python
+venv
+
+# Node
+frontend/node_modules
+
+# Git
+.git
