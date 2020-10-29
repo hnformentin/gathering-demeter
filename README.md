@@ -8,11 +8,18 @@ Examples:
 Design we are going towards:
 ![](documents/sketches/sketch_second_iteration)
 
-# SI Gathering Challenge: Template
-
-To run the project locally, you need docker:
-
+# Run project using Docker
 ```
 docker build -t timer .
 docker run -p 8000:8000 --rm --name timer timer
+```
+
+# Run project without Docker
+Assumes you have python and node installed. 
+```
+cd frontend
+npm install
+npm run build
+cd ..
+python app.py
 ```
