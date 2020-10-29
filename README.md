@@ -1,9 +1,12 @@
 # Equinor Timer
-This app can be used to set up multiple timers that run in paralell or timers trigger when other timers finish.
+This app can be used to set up multiple timers that run in parallel or timers trigger when other timers finish.
 
 Examples:
-- When making a dinner you whould like to start making the different dishes at different times, and somethime a dish cant be started until another is finished.
-- Could also be used when holding a presentation to time the different parts of the presentation
+- When making a dinner you would like to start making the different dishes at different times, and sometime a dish can't be started until another is finished.
+- Could also be used when holding a presentation to time the different parts of the presentation.
+
+Design we are going towards:
+![](documents/sketches/sketch_second_iteration)
 
 # SI Gathering Challenge: Template
 
