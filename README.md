@@ -6,7 +6,7 @@ Examples:
 - Could also be used when holding a presentation to time the different parts of the presentation.
 
 Design we are going towards:
-![alt 'UI Sketches'](documents/sketches/sketch_second_iteration)
+![alt 'UI Sketches'](documents/sketches/sketch_second_iteration.PNG)
 
 # Way of Working
 
@@ -26,7 +26,7 @@ docker run -p 8000:8000 --rm --name timer timer
 ```
 
 # Run project without Docker
-Assumes you have python and node installed. 
+Assumes you have python and node installed.
 ```
 cd frontend
 npm install
