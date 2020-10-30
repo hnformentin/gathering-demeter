@@ -3,6 +3,8 @@ FROM node:lts-alpine as Build
 COPY frontend/ /app/frontend
 WORKDIR /app/frontend
 
+RUN npm install -g npm
+
 RUN npm install
 RUN npm run build
 
