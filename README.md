@@ -6,7 +6,7 @@ Examples:
 - Could also be used when holding a presentation to time the different parts of the presentation.
 
 Design we are going towards:
-![alt 'UI Sketches'](documents/sketches/sketch_second_iteration)
+![alt 'UI Sketches'](documents/sketches/sketch_second_iteration.png)
 
 # Way of Working
 
