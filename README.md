@@ -6,13 +6,32 @@ Examples:
 - Could also be used when holding a presentation to time the different parts of the presentation.
 
 Design we are going towards:
-![](documents/sketches/sketch_second_iteration)
 
-# SI Gathering Challenge: Template
+![alt 'UI Sketches'](documents/sketches/sketch_second_iteration.PNG)
 
-To run the project locally, you need docker:
+# Way of Working
 
+## The Pillars
+
+![alt 'The Pillars'](documents/wow_pillars.PNG)
+
+## The Process
+
+![alt 'The Process'](documents/wow_process.PNG)
+
+
+# Run project using Docker
 ```
-docker build -t <name> .
-docker run -p 8000:8000 <name>
+docker build -t timer .
+docker run -p 8000:8000 --rm --name timer timer
+```
+
+# Run project without Docker
+Assumes you have python and node installed.
+```
+cd frontend
+npm install
+npm run build
+cd ..
+python app.py
 ```
