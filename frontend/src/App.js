@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import './components/NewTimerDialog'
-import { Button, Typography } from '@equinor/eds-core-react'
+import { Button, Card, Typography } from '@equinor/eds-core-react'
 import NewTimerDialog from './components/NewTimerDialog';
 
 function App() {
@@ -22,6 +22,16 @@ function App() {
     setShowNewTimerDialog(false)
   }
 
+  function sec2time(timeInSeconds) {
+    var pad = function(num, size) { return ('000' + num).slice(size * -1); },
+    time = parseFloat(timeInSeconds).toFixed(3),
+    hours = Math.floor(time / 60 / 60),
+    minutes = Math.floor(time / 60) % 60,
+    seconds = Math.floor(time - minutes * 60);
+
+    return pad(hours, 2) + ':' + pad(minutes, 2) + ':' + pad(seconds, 2);
+}
+
   return (
     <div className="App">
       <Typography variant="h3">Timers</Typography>
@@ -30,7 +40,14 @@ function App() {
       </Button>
 
       {timers.map((timer) => {
-        return <Typography key={timer.name} variant="h6">{timer.name}: Remaining time {(timer.endTime - currentTime)/1000}</Typography>
+        return <Card variant="info">
+                <Card.CardHeader>
+                  <Card.CardHeaderTitle>
+                    <Typography variant="h4">{timer.name}</Typography>
+                    <Typography variant="body_short">{sec2time((timer.endTime - currentTime)/1000)}</Typography>
+                  </Card.CardHeaderTitle>
+                </Card.CardHeader>
+              </Card>
       })}
 
       {showNewTimerDialog &&
