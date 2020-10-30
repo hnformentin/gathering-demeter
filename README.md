@@ -13,6 +13,6 @@ Design we are going towards:
 To run the project locally, you need docker:
 
 ```
-docker build -t <name> .
-docker run -p 8000:8000 <name>
+docker build -t timer .
+docker run -p 8000:8000 --rm --name timer timer
 ```
