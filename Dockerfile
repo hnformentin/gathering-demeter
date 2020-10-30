@@ -1,4 +1,4 @@
-FROM node:current-alpine as Build
+FROM node:lts-alpine as Build
 
 COPY frontend/ /app/frontend
 WORKDIR /app/frontend
