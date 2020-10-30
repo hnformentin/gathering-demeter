@@ -1,1 +1,5 @@
 flask
+uuid
+requests
+flask_session
+msal
