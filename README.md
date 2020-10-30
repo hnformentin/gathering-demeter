@@ -27,3 +27,10 @@ docker run -p 8000:8000 --rm --name timer timer
 
 # Run project without Docker
 Assumes you have python and node installed. 
+```
+cd frontend
+npm install
+npm run build
+cd ..
+python app.py
+```
